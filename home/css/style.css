@@ -2,7 +2,7 @@ html {
     background-color: #222222;
     background-image: url(../images/bar.png);
     background-repeat: no-repeat;
-    background-size: 100% 50%;
+    background-size: 100% auto;
 }
 
 /* Add a black background color to the top navigation */
@@ -54,12 +54,16 @@ h2 {
 }
 
 .happening {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     padding-bottom: 50px;
-    width: 75%;
+    width: 60%;
     text-align: center;
     color: white;
     font-size: 14pt;
@@ -69,12 +73,16 @@ h2 {
 }
 
 .jam {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     padding-bottom: 50px;
-    width: 75%;
+    width: 60%;
     text-align: center;
     color: white;
     font-size: 14pt;
@@ -84,12 +92,16 @@ h2 {
 }
 
 .fight {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     padding-bottom: 50px;
-    width: 75%;
+    width: 60%;
     text-align: center;
     color: white;
     font-size: 14pt;
@@ -98,14 +110,19 @@ h2 {
     background-color: #222222;
 }
 
+
+
 .party {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
     padding-bottom: 50px;
-    width: 75%;
+    width: 60%;
     text-align: center;
     color: white;
     font-size: 14pt;
@@ -122,8 +139,10 @@ h2 {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    width: 200px;
     font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -134,4 +153,10 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
+}
+
+@media only screen and (max-width:600){
+    body {
+        font-size: 11pt;
+    }
 }
